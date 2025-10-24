@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* ___________________ Header Starts _______________________*/
+.navbar-default{ padding:0; margin:0; background:none; border:none; display: block; }
+.stellarnav{ transition:all 0.3s ease-in-out; }
+
+/*-- Moblie Menu 1 --*/
+.stellarnav .menu-toggle span.bars span { width: 35px; height: 2px; background-color: #fff; display: block; margin: 8px auto; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.stellarnav.active .bars span:nth-child(2){ opacity:0; }
+.stellarnav.active .bars span:nth-child(1){
+  -webkit-transform: translateY(9px) rotate(45deg);
+  -ms-transform: translateY(9px) rotate(45deg);
+  -o-transform: translateY(9px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg); }
+.stellarnav.active .bars span:nth-child(3){
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -ms-transform: translateY(-10px) rotate(-45deg);
+  -o-transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg); }
+
+
+.navbar-default .container{ position: relative; }
+.navbar-default .container .logo-block{ position: absolute; left: 0; top: 0; z-index: 99;}
+.navbar-default .logo-block img{ max-width: 160px; padding: 18px; background-color: var(--light-color); border-radius: 15px;}
+.navbar-default .menu-block{ margin-left: calc(60px + clamp(95px, 9.896vw, 190px));}
+.navbar-default .stellarnav li a{ color: var(--blue-color); font-size: var(--uc-font-size-18); line-height: 1.2222; text-transform: uppercase; font-weight: 500;}
+.navbar-default .stellarnav li.active a{ color: var(--primary-color);}
+.navbar-default .stellarnav > ul > li > a{ padding: 45px 12.5px;}
+.stellarnav.dark .menu-toggle span.bars span{ background-color: var(--dark-color);}
+.stellarnav.dark .menu-toggle span.bars{ white-space: initial;}
+.stellarnav .menu-toggle, .stellarnav .call-btn-mobile, .stellarnav .location-btn-mobile, .stellarnav .close-menu{ padding: 0;}
+.stellarnav.mobile.right > ul, .stellarnav.mobile.left > ul{ z-index: 999;}
+.stellarnav.mobile.dark ul{ background-color: #fff;}
+.navbar-default .stellarnav > ul > li > a{ padding-block: clamp(15px, 2.344vw, 45px);}
+.stellarnav.mobile > ul > li{ border-bottom: 1px solid #0000001e;}
+.stellarnav.dark .icon-close::after,
+.stellarnav.dark .icon-close::before{ border-color: var(--dark-color-2);}
+/* ___________________ Header end _______________________*/
+
+
+/* ___________________ Banner section start_______________________*/
+.banner-section{ position: relative;}
+.banner-section .main-block{ position: relative; z-index: 1; color: var(--light-color);}
+.banner-section .main-block::after{ content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: #27477D; opacity: 70%; z-index: 1;}
+.banner-section .main-block .content{ padding: clamp(102px, 13.281vw, 255px) clamp(15px, 1.563vw, 30px) clamp(200px, 16.406vw, 315px); text-align: center; position: relative; z-index: 999; }
+.banner-section .main-block h1{ font-size: var(--uc-font-size-65); margin-bottom: clamp(15px, 1.563vw, 30px); line-height: 1.2308;}
+.banner-section .main-block h1 span{ color: var(--primary-color);}
+.banner-section .main-block p{ font-size: var(--uc-font-size-25); font-weight: 500; max-width: 942px; text-align: center; margin: 0 auto;  line-height: 1.52;}
+
+.banner-section .bottom-block{ position: absolute; z-index: 999;  bottom: -130px; right: 0; left: 0;}
+.banner-section .box-container{ padding: 20px; background-color: var(--light-color); border-radius: 20px; box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.13); }
+.banner-section .box-container .box{ background-color: var(--primary-color); border-radius: 10px; padding: 25px 15px;}
+.banner-section .box-container .box .icon img{ height: clamp(40px, 2.917vw, 56px); width: auto;}
+.banner-section .box-container .box h3{ margin-block: clamp(14px, 1.042vw, 20px); font-size: var(--uc-font-size-22); font-weight: 700;}
+.banner-section .box-container .box p{ font-size: var(--uc-font-size-17); line-height: 1.5882;}
+/* ___________________ Banner section end_______________________*/
+
+
+/* ___________________ About section start_______________________*/
+.about-section{ padding-block: calc(130px + clamp(45px, 5.208vw, 100px)) clamp(45px, 5.208vw, 100px);}
+.about-section .left-box .title{ font-size: var(--uc-font-size-70); line-height: 1.0429; margin-bottom: clamp(15px, 1.563vw, 30px); max-width: 450px;}
+.about-section .left-box p{ font-size: var(--uc-font-size-18); line-height: 1.6667;}
+.about-section .left-box p + p{ margin-top: clamp(20px, 2.083vw, 40px);}
+.about-section .left-box .primary-btn-1{ margin-top: clamp(15px, 1.563vw, 30px);}
+.about-section .right-box{ position: relative; z-index: 2; margin-right: 22px;}
+.about-section .right-box::before{ content: ''; height: 100%; width: 100%; position: absolute; bottom: -17px; right: -22px; background-color: var(--primary-color); border-radius: 10px; z-index: -1;}
+.about-section .right-box img{ border-radius: 10px;}
+/* ___________________ About section end_______________________*/
+
+
+/* ___________________ Chamber Benefits section start_______________________*/
+.chamber-benefits-section{ padding-block: clamp(45px, 5.208vw, 100px); background-color: var(--ash-color);}
+.chamber-benefits-section .title{ font-size: var(--uc-font-size-55); margin-bottom: clamp(15px, 1.563vw, 30px);}
+.chamber-benefits-section .box{  background-color: var(--light-color); border: 1px solid #E6E6E6; border-radius: 10px; padding: 0 clamp(14px, 1.042vw, 20px) clamp(18px, 1.823vw, 35px);  text-align: center;}
+.chamber-benefits-section .box .icon-block .icon{ border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; background-color: #BD4CEC; width: 88px; aspect-ratio: 1/1; overflow: hidden;}
+.chamber-benefits-section .box h5{ font-size: var(--uc-font-size-22); font-weight: 700; margin-block: clamp(15px, 1.563vw, 30px) clamp(13px, 1.302vw, 25px);}
+.chamber-benefits-section .box p{ color: var(--dark-color-2); margin-bottom: clamp(15px, 1.563vw, 30px); font-size: var(--uc-font-size-17);}
+.chamber-benefits-section .box a{ height: 54px; aspect-ratio: 1/1; border-radius: 50%; border: 1px solid #5ECAF6; color: var(--dark-color-2); display: flex; justify-content: center; align-items: center;}
+.chamber-benefits-section .box .line-shape{ width: 91px; height: 4px; position: relative; margin: 0 auto; margin-bottom: 30px; background-image: linear-gradient(90deg, #00AAEF 0% 65.17%, #fff 65.17% 73.04%, #F6C60D 73.04% 100%) ;}
+.chamber-benefits-section .box a:hover{ background-color: #5ECAF6; color: var(--light-color); transition: 0.3s ease-in-out;}
+/* ___________________ Chamber Benefits section end_______________________*/
+
+
+/* ___________________ How to join section start_______________________*/
+.how-to-join-section{  padding-block: clamp(50px, 6.510vw, 125px); position: relative; z-index: 1;}
+.how-to-join-section::after{ content: ''; height: 100%; width: 100%; position: absolute; top: 0; left: 0; background-color: #000000; z-index: 2; opacity: 70%; }
+.how-to-join-section .main-block{ position: relative; z-index: 3; color: var(--light-color); text-align: center;}
+.how-to-join-section .title{ font-size: var(--uc-font-size-60); margin-bottom: clamp(14px, 1.042vw, 20px); line-height: 1.0333;}
+.how-to-join-section h5{ font-size: var(--uc-font-size-20); font-weight: 700; margin-bottom: clamp(15px, 1.563vw, 30px);}
+.how-to-join-section ul li{ font-size: var(--uc-font-size-18);}
+.how-to-join-section ul li + li{ margin-top: clamp(14px, 1.042vw, 20px);}
+.how-to-join-section a{ margin-top: clamp(20px, 2.083vw, 40px);}
+/* ___________________ How to join section end_______________________*/
+
+
+/* ___________________ steps to join section start_______________________*/
+.steps-to-join-section{ padding-block: clamp(36px, 4.167vw, 80px) 0;}
+.steps-to-join-section .main-block .title{ margin: 0 auto; color: var(--primary-color); font-size: var(--uc-font-size-60); padding-bottom: clamp(14px, 1.042vw, 20px) ; margin-bottom: clamp(28px, 2.865vw, 55px); position: relative; display: inline-block; }
+.steps-to-join-section .main-block .title::after{ content: ''; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); height: 1px; background-color: var(--primary-color); width: 55.47%;}
+.steps-to-join-section .main-block .box-container{ display: grid; grid-template-columns: repeat(5, 1fr); grid-gap: 24px; margin-bottom: 12px;}
+.steps-to-join-section .main-block .box h3{ font-size: var(--uc-font-size-60); font-weight: 800; }
+.steps-to-join-section .main-block .box h4{ font-size: var(--uc-font-size-22); font-weight: 800; color: var(--primary-color); margin-block: 10px;}
+.steps-to-join-section .main-block .box p{ font-size: var(--uc-font-size-20); font-weight: 500; line-height: 1.4;}
+.steps-to-join-section .connect-community-box{ position: relative; bottom: clamp(-25px, -2.604vw, -50px);}
+.steps-to-join-section .connect-community-box .content{ background-color: var(--sky-blue-color); text-align: center; color: var(--light-color); padding: clamp(34px, 3.906vw, 75px) clamp(56px, 7.292vw, 140px) clamp(29px, 3.385vw, 65px); border-radius: 20px;}
+.steps-to-join-section .connect-community-box .content .title{ font-size: var(--uc-font-size-60);}
+.steps-to-join-section .connect-community-box .content p{ margin-block: clamp(15px, 1.563vw, 30px) clamp(20px, 2.083vw, 40px); font-size: var(--uc-font-size-20); line-height: 1.9;}
+.steps-to-join-section .connect-community-box .content .btn-block{ display: flex; gap: 15px; justify-content: center; z-index: 999;}
+/* ___________________ steps to join section end_______________________*/
+
+
+/* ___________________ footer section start_______________________*/
+footer{ background-color: var(--primary-color);}
+footer .top-block{ padding-block: calc(clamp(32px, 3.646vw, 70px) + clamp(25px, 2.604vw, 50px)) clamp(20px, 2.083vw, 40px);}
+footer .top-block [class^="box-"] h3{ font-weight: 500; padding-bottom: clamp(13px, 0.990vw, 19px); margin-bottom: clamp(15px, 1.563vw, 30px); position: relative;}
+footer .top-block [class^="box-"] h3::after{ content: ''; width: 60px; height: 1px; background-color: var(--dark-color); position: absolute; left: 0; bottom: 0;}
+footer .top-block .box-1 ul li + li{ margin-top: clamp(11px, 0.781vw, 15px);}
+footer .top-block .box-2 ul{ display: grid; gap: clamp(15px, 1.563vw, 30px); grid-template-columns: repeat(2, 1fr);}
+footer .top-block .box-2 ul li{ position: relative;}
+footer .top-block .box-2 ul li::before{ content: '\f054'; font-family: "Font Awesome 6 Pro"; color: var(--light-color); margin-right: 10px;}
+footer .top-block .box-3 ul li + li{ margin-top: clamp(15px, 1.563vw, 30px);}
+footer .top-block .box-3 ul li{ display: flex; gap: 10px; align-items: center;}
+footer .top-block .box-3 ul li i{ color: var(--light-color); font-size: 25px; font-weight: 300;}
+footer .bottom-block{ display: flex; justify-content: space-between; align-items: center; padding-block: 20px; border-top: 1px solid #B26916; gap: 24px;}
+footer .bottom-block .social-media ul{ display: flex; gap: 10px;}
+footer .bottom-block .social-media ul li a{ height: 40px; width: 40px; border-radius: 50%; background-color: #F3952B; display: flex; justify-content: center; align-items: center; }
+footer .row{ --bs-gutter-y: clamp(12px, 1.250vw, 24px);}
+footer .top-block [class^="box-"] ul li a:hover{ transform: translateY(-3px); transition: 0.3s ease-in-out;}
+footer .bottom-block .social-media ul li a:hover{ background-color: var(--light-color); transition: 0.3s ease-in-out;}
+/* ___________________ footer section end_______________________*/
